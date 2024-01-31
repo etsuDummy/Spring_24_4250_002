@@ -3,3 +3,23 @@ Ethan
 Genalyn
 Trent
 Raseem
+
+Requirements: What is needed, who for, when, and why it is needed.Includes expected output, preferred technologies, and intended audience.
+
+Design: Determining how to create the product in a way that it meets all the given requirements. 
+        Includes things like UML diagrams, Team collaboration software, and specific technologies.
+
+Implementation: Creating a product including hardware, software, and code that produces a working application. 
+                Includes writing the specific code and building the database needed to achieve the design.
+
+Test: Run the program through the many different test cases.
+      Includes creating test cases for edge cases, happy paths, and sad paths.
+
+Release: Give the finished product after testing to those who have requested it. 
+          Could include releasing features rather than the entire project at once.
+
+Support: The process allowing for unexpected bug fixes, and any error/potential problems after launch.
+          Includes timely updates to incorporate bug fixes.
+
+Upgrades: New features that are needed or wanted to enhance the current product.
+          Includes timely updates allowing product to stay up to date.
