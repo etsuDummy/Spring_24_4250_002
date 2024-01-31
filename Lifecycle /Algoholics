@@ -1,5 +1,46 @@
-Team Members:
-Travis Nagle
-Philip Edwards
-Aaron Shingleton
-Caden Lafollette
+Team Members: Travis Nagle, Philip Edwards, Aaron Shingleton, Cade Lafollette
+
+Requirements: Phase dedicated to defining WHAT needs to be done (+ maybe some WHY), outputs an SRS
+  - Defining the problem
+  - Understanding the problem
+  - Establishing requirements for client
+  - Clarifying Questions
+  - SRS needs to be produced
+  - Software requirements specs
+
+Design: Planning approaches to the problem and determining which may work best, involves high-level and detailed design stages
+  - Brainstorming potential solutions
+  - Breaking into sub-problems
+  - Each system of solution may use a separate series of design docs
+
+Implementation: After a solution has been chosen and outlined, create the solution. Use diagrams to generate a functional product.
+  - Selecting the potential solution design
+  - Creating the product
+  - Phase with the largest pool of actively involved people
+
+Testing: After implementation is believed to be complete, ensure the product does what it should.
+  - Create test cases based on both expected and unexpected input
+  - Many orgs use independent testing groups to conduct testing
+  - QA
+  - Unit testing (Units of solution)
+  - Subsystems (test a section of solution)
+  - Systems (test whole solution)
+  - Use outside personnel to use product in unexpected wayas
+  - Use both technically experienced and inexperienced
+  - Try to break the product in creative ways
+
+Release: The phase in which the product/software is packaged w/ necessary dependencies and released to the consumer(s)
+  - Docker
+  - Packaging
+  - Meets all requirements
+
+Support/Maintenance: Post-release phase that involves bug fixing + patching (smaller) issues w/ the software
+  - Pushed to the product while the consumer has it
+  - NO MAJOR CHANGES
+  - Use versions to keep track of changes that are made
+  - Patches
+  - Include detailed patch notes to communicate well with users
+  - Minimize frequency and size to reduce annoyance and conflict
+
+Upgrades/Updates: Improving upon the working solution. Potentially adding new features or making large changes.
+  - The deliverables of U/U are usually expressed as iterations of release notes
