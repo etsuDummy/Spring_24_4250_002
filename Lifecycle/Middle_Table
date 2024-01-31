@@ -1,1 +1,32 @@
 Timothy, Jasmine, Ethan , Dustin , Brycen
+
+Requirements- Determine the necessary specification from the client to achieve specific features,want & needs. 
+These might entail an SRS, client-clarfication, constraints, and intial budget . 
+
+Design- A plan around the requirements that were gathered in the previous step. It sets the stage for implementation. 
+This might require control flow diagram, UML diagram, determination of roles, software development model, and time-allocation.
+
+Implentation- Putting the selected solution into practice. Usually following some documentations from the design phase. 
+This phase includes source code, feature division, version control, realized time, project management, and actually coding it.
+
+Test- Taking what has been made in the implementation and checking both good/bad inputs until it is able to move onto release. 
+This includes unit testing, documentation, code reviews, Q & A, and Tracability Matrix.
+
+Release Phase- The release phase is the production & deployment of the final artifact of a software project. 
+In this phase there is determining phase of release, Verisoning , and Production vs. In-house builds.
+
+Support/Maintainence- Being available / having an organized & effective process for ensuring product / solution stays functioning. 
+Includes help desk, patches, customer support, clarfiying question, updating documentation, Support engineers, and support plans.
+
+Upgrade/Updates- Extending & adding feature to a released software artifact to ensure that it stays releveant & continues to serves its purpose. 
+Includes patch notes, additional featuers, extending current features, hardware updates, firmware updates , and support technology  
+
+Waterfall- This model is used when there is no updating the product once it has been released. 
+It would be more appropiate to use when developing an integrated system due to the difficulty of updating the system.
+It follows the entire life cycle from start to finish and does not go back once it is finished. 
+
+Iterative- Iterative goes through the full cycle but once it is done. 
+Once it is release it is support but the updates are only made for small bugs and big updates only come afterm months or years after the release.
+
+Agile/Scrum- Agile/Scrum is used when there is close customer interaction and allows for the smalls teams to continually update the applications.
+This is commonly found in cloud based applications due to the ease of updating them.
