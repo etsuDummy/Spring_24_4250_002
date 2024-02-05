@@ -24,13 +24,13 @@ Ball Program:
 
 Requirements:
 •	Functional – mandatory 
-  o	Ball should have realistic bouncing functions off the side of the screen 
-  o	Program should display a ball that moves in response to user input and environment 
-  o	Users should be able to draw obstacles on the screen using the mouse 
+  o	Ball must have realistic bouncing functions off the side of the screen 
+  o	Program must display a ball that moves in response to user input and environment 
+  o	Users must be able to draw obstacles on the screen using the mouse 
   o	Obstacles must be a minimum of 3 pixels in size to be detected as a collision 
   o	The program must accurately detect collisions between the ball and the screen boundaries 
-  o	Obstacles should not overlap and the ball should react realistically to multiple obstacles 
-  o	Scoring system maybe based on number of obstacles overcome by the ball
+  o	Obstacles msut not overlap 
+  o the ball must react realistically to multiple obstacles
   o	Ball Animation 
   o	Obstacle Creation 
   o	Collison Detection 
@@ -44,7 +44,8 @@ Requirements:
   o	Scoring system
   o	Display scoring on the screen in real time
   o	Game modes? Time challenges?
-  o	Sounds effects and music 
+  o	Sounds effects and music
+  o	Scoring system maybe based on number of obstacles overcome by the ball
 •	Unhappy Paths 
   o	Invalid obstacles drawing. If the user attempts to draw an obstacle smaller than three pixels, the program could prompt the user to draw again 
   o	Overlapping obstacles – the program should detect this condition and provide feedback, suggesting that the obstacles not overlap 
