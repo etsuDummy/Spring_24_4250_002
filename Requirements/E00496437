@@ -1,13 +1,11 @@
 Ball program
 Functional:
-			* The application shall begin by drawing a ball on screen.
-			* The application shall allow a user to draw a shape that is larger than 2 pixels, with their mouse cursor.
-			* The application shall allow a ball to bounce off the sides of your screen.
-			* The application shall allow a ball to bounce off of a shape the user drew, if any.
-      * The application shall allow a ball to continue in a forward motion until it hits an obstacle.
-
-
-
+	* The application shall begin by drawing a ball on screen.
+	* The application shall allow a user to draw a shape that is larger than 2 pixels, with their mouse cursor.
+	* The application shall allow a ball to bounce off the sides of your screen.
+	* The application shall allow a ball to bounce off of a shape the user drew, if any.
+        * The application shall allow a ball to continue in a forward motion until it hits an obstacle.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	• Questions to ask during Analysis (ball game)
 		○ What is the max pixel limit for the drawn object?
 		○ What platform is this for? (mobile, desktop, web)
@@ -27,3 +25,10 @@ Functional:
 			* Screen Saver (or program that continually runs…idle game)
 				□ Does the ball bounce indefinitely?
      ○ Will the backgrounds change over time?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Racing Game
+Functional:
+	* The application shall allow a user to move a car left or right to avoid obstacles on the road.
+	* The application shall continue to run until either the win or the lose condition is met.
+	* The application shall make the world move around the stationary car.
