@@ -1,0 +1,29 @@
+Ball program
+Functional:
+			* The application shall begin by drawing a ball on screen.
+			* The application shall allow a user to draw a shape that is larger than 2 pixels, with their mouse cursor.
+			* The application shall allow a ball to bounce off the sides of your screen.
+			* The application shall allow a ball to bounce off of a shape the user drew, if any.
+      * The application shall allow a ball to continue in a forward motion until it hits an obstacle.
+
+
+
+	• Questions to ask during Analysis (ball game)
+		○ What is the max pixel limit for the drawn object?
+		○ What platform is this for? (mobile, desktop, web)
+		○ How many shapes is the user allowed to draw?
+		○ Do the shapes disappear after a certain time?
+		○ Is the user's mouse cursor default for their system, or will it be a custom cursor?
+		○ What color is the ball?
+		○ Are the colors of the shapes randomized?
+		○ Are the shapes stationary?
+		○ Will the user see a background, or blank space?
+		○ Is the user finished with drawing the shape when the beginning connects with the end, or is it finished when the user lets go of the mouse click?
+		○ Is this going to be a game or screensaver/continuously running program?
+			* Game
+				□ What is the win condition?
+				□ Is there a lose condition?
+				□ Do you want the game to keep track of your high score?
+			* Screen Saver (or program that continually runs…idle game)
+				□ Does the ball bounce indefinitely?
+     ○ Will the backgrounds change over time?
