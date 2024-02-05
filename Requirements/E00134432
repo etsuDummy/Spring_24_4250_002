@@ -1,0 +1,20 @@
+•	Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
+
+Requirements: 
+
+Mandatory:  
+
+Player must stay inside outer boundaries or crash
+Crash involves a temporary slowdown (10% speed for 2 seconds)
+Obstacles are considered passable (when crash, you can pass through them)
+Player chooses between 3 bodies of vehicle, car, truck, motorcycle, with 3 color options for each
+Controls include : braking, acceleration (or going), shifting up, and shifting down
+Course is procedurally generated, wide boundaries, obstacles 
+
+
+Optional:  
+                                     
+Obstacles can be two types : passable, and impassable
+Holding brake can reverse the vehicle                                     
+Different difficulties : mumber of obstacles in seed, tighter / narrowing / expanding boundaries
+Number of crashes adjusts vehicle display (wear and tear)
