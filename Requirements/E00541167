@@ -1,0 +1,103 @@
+Requirements/E00541167
+Ball Program:
+•	Identify the problem and its component parts: 
+  o	Try to write the requirements for a program that bounces a ball off the sides of the screen and any obstacles larger than 3 pixels the user draws with the mouse
+•	Additional required information:
+  o	How many obstacles can the user draw? 
+  o	Is there a limit to the shape/size/number of pixels of obstacles?
+  o	How does the user win the game?
+  o	What is the point of this game? 
+  o	Is there scoring?
+  o	How are points collected? Are there specific points for doing specific things?
+  o	What are the rules?
+  o	Is there a limit to the size of the obstacles? In pixels?
+  o	Is there a limit to the number of obstacles?
+  o	Can users customize appearance of the game?
+  o	Difficulty levels 
+  o	
+•	Breakdown and identify logical connection between components of the program:
+  o	Ball needs to detect and react to obstacles
+  o	Obstacles need to be detectable 
+•	State assumptions:
+  o	Obstacles overlapping would be hard to code into the physics of the game
+  o	Since this is a game, there could be scoring 
+
+Requirements:
+•	Functional – mandatory 
+  o	Ball should have realistic bouncing functions off the side of the screen 
+  o	Program should display a ball that moves in response to user input and environment 
+  o	Users should be able to draw obstacles on the screen using the mouse 
+  o	Obstacles must be a minimum of 3 pixels in size to be detected as a collision 
+  o	The program must accurately detect collisions between the ball and the screen boundaries 
+  o	Obstacles should not overlap and the ball should react realistically to multiple obstacles 
+  o	Scoring system maybe based on number of obstacles overcome by the ball
+  o	Ball Animation 
+  o	Obstacle Creation 
+  o	Collison Detection 
+  o	Ball interaction physics 
+•	Non-functional 
+  o	Needs to have a nice user interface – make it easy to draw obstacles and understand the rules 
+  o	Collision detection needs to be efficient 
+  o	Smooth animation 
+  o	Error Handling for unexpected user actions 
+•	Optional 
+  o	Scoring system
+  o	Display scoring on the screen in real time
+  o	Game modes? Time challenges?
+  o	Sounds effects and music 
+•	Unhappy Paths 
+  o	Invalid obstacles drawing. If the user attempts to draw an obstacle smaller than three pixels, the program could prompt the user to draw again 
+  o	Overlapping obstacles – the program should detect this condition and provide feedback, suggesting that the obstacles not overlap 
+  o	Drawing obstacles outside the screen – do not let user draw obstacles outside the screen and alter user that this is an invalid move 
+  o	Insufficient hardware resources – alert user
+  o	
+Arcade Style Game:
+•	Identify the problem and its component parts: 
+  o	Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
+•	Additional required information:
+  o	How does the owner want the user to control input into the game? Keyboard? Joystick? 
+  o	Are the obstacles randomly generated as the game is being played or are there maps?
+  o	How do we know when the game is over? How many crashes/ collisions 
+•	Breakdown and identify logical connection between components of the program:
+  o	Car must respond to obstacle
+  o	Obstacle must be detectable 
+  o	
+•	State assumptions:
+  o	May need to give different input scheme options for accessibility services 
+  o	Going to want to vary the obstacles 
+  o	Arcade style means there is a scoring system 
+  o	Arcade systems typically have difficulty levels 
+Requirements:
+•	Functional – mandatory 
+  o	Game must allow users to control the movement of the vehicle using some kind of input device  
+  o	generate obstacles on the road for the player to navigate around 
+  o	Ensure obstacles vary in size, shape and maybe speed if obstacles move
+  o	Implement a collision detection system to determine when the player’s vehicle collides with obstacles 
+  o	Game should have good physics and respond appropriately to crash 
+  o	Create a scoring mechanism. Maybe based on how many miles traveled without crash 
+  o	Display this score 
+  o	Game over screen 
+o	
+•	Non-functional 
+  o	Needs to have a nice user interface – make it easy to draw obstacles and understand the rules 
+  o	Collision detection needs to be efficient 
+  o	Smooth animation 
+  o	Error Handling for unexpected user actions 
+  o	Accessibility 
+•	Optional 
+  o	Provide options for the different control schemes 
+  o	Things like power ups 
+  o	Difficulty levels 
+  o	Environment variation 
+  o	Multiplayer mode
+  o	Vehicle upgrades 
+•	Mandatory
+  o	Player controls
+  o	Obstacle generation
+  o	Collison detection 
+  o	Scoring system 
+  o	Game over screen/ way to determine game over 
+•	Unhappy Paths 
+  o	Invalid control input – if the user provides unrecognized input for controlling the vehicle, the program could respond by providing feedback to the user about the correct controls
+  o	Collison with an obstacle during the game – program should initiate a collision response like crash animation, sound effects, transition to game over screen 
+  o	If the user starts to button mash in a way that might not be registered by the machine – the program should implement a limit on control selection somehow 
