@@ -1,0 +1,41 @@
+Requirements Exercise – Bouncy Ball
+
+- - -
+
+Requirements
+1.	(Mandatory) There MUST be a ball that bounces off the edges of the app window (all four: top-right-bottom-left).
+2.	(Mandatory) The user MUST be able to draw shapes that the ball will also bounce off of.
+  a.	The minimum “area” of the shape MUST be 3px.
+    i.	Constraint
+3.	(Mandatory) The app should be portable to Chromium-based web browsers.
+  a.	If possible, design separate window scaling mechanism for mobile versions of browsers.
+4.	(Mandatory) If a user attempts to draw a shape over the ball’s current position, the shape will be rejected/not instantiated.
+5.	(Optional) The user should have a selection of brush “materials” to choose from:
+  a.	Default: Standard physics interaction, opaque appearance
+  b.	Flubber: Magnifies impact forces on both the ball and the receiving shape; translucent
+6.	(Optional) The user may use a color wheel to change the color applied to drawn shapes while a particular color is selected.
+  a.	RGB(A) color wheel
+7.	(Optional) The physics simulation should include a button to toggle gravity on and off for all objects in the scene.
+8.	(Optional) There should be a system for game music to play.
+  a.	The user should have the option to adjust the volume of the music that is playing.
+9.	(Optional) When on a desktop browser, the simulation should adapt to resizing of the browser window.
+  a.	Constraint: this adaptation will only occur on the window down to 15% of the max resolution (default resolution).
+10.	(Optional) The user may enable a “Tracer Mode” which will cause the ball to represent its path throughout the simulation for a user-defined lifetime.
+  a.	E.g. When a user shrinks the size of the window, the edges of the simulation should also shrink accordingly – causing the ball to bounce quicker.
+
+- - -
+
+Other Considerations
+•	Does the brush have a limit? What happens if the user fills the screens?
+
+=====
+
+Requirements Exercise - Driving Game (TODO)
+
+- - -
+
+Requirements
+
+- - -
+
+Other Considerations
