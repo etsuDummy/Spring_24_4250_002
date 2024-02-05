@@ -10,13 +10,15 @@ Requirements Exercise
 
 Program must generate balls at random intervals 
 
-Balls can be various colors 
+Balls can be various colors using RGB values
 
-Balls can be various sizes 
+Balls can be small, medium, or large
 
 Balls can have a random initial speed 
 
-Balls can have a maximum speed 
+Balls can have a minimum speed that is greater than 0
+
+Balls can have a maximum speed
 
 There can be at most 10 balls on the screen at once 
 
