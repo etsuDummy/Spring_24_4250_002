@@ -22,5 +22,16 @@ Blocks cannot be placed dead center- m
 the blocks cannot be touching-m
 there must be a limit to blocks allow for users - m
 
+The solution:
+A program that works in the same language.
+Follows rules as stated in the requirements.
+Test would be on integration, start, inputs, clocks, boundaries, and goals. 
+Integrations- if the game will start from the inside the original game.
+Start- Whetehr the game will load and lead to the start screen.
+Input- if the blocks can be placed anywhere thats allowed.
+Clock- The score system is working in the game.
+Boundaries- The ball collides with borders on both obstacles and walls.
+Goal- It will stop clock resulting in the prompt for restart.
+
 
 
