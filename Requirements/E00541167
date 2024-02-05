@@ -1,104 +1,125 @@
 Requirements/E00541167
+-	Try to write the requirements for a program that bounces a ball off the sides of the screen and any obstacles larger than 3 pixels the user draws with the mouse
+-	Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
+Bring your attempt to class so we can compare it against other’s requirements. Reference the rubric on the next slide for some guidelines.
+Your requirement set should be as robust as you can do so that you gain the most from the exercise. I’ve provided a simple description but for it to be robust, you need to define additional features/capabilities (these are the requirements). For example, for the ball program, make it a game that would be interesting to play or a screensaver that would actually be interesting to watch for more than a second or two. 
+Try to identify which requirements are mandatory and which ones are optional. Which one are functional and which ones are non-functional. 
+A good place to start is “the happy path”. The happy path is way things are supposed to behave if everything goes correctly. 
+Then, identify what the program should do for as many “unhappy” paths as you can think of. An unhappy path is what the program should do if the user does something wrong, provided wrong information, or fails to do something they should do.
+
 Ball Program:
 •	Identify the problem and its component parts: 
-  o	Try to write the requirements for a program that bounces a ball off the sides of the screen and any obstacles larger than 3 pixels the user draws with the mouse
+o	Try to write the requirements for a program that bounces a ball off the sides of the screen and any obstacles larger than 3 pixels the user draws with the mouse
 •	Additional required information:
-  o	How many obstacles can the user draw? 
-  o	Is there a limit to the shape/size/number of pixels of obstacles?
-  o	How does the user win the game?
-  o	What is the point of this game? 
-  o	Is there scoring?
-  o	How are points collected? Are there specific points for doing specific things?
-  o	What are the rules?
-  o	Is there a limit to the size of the obstacles? In pixels?
-  o	Is there a limit to the number of obstacles?
-  o	Can users customize appearance of the game?
-  o	Difficulty levels 
-  o	
+o	How many obstacles can the user draw? 
+o	Is there a limit to the shape/size/number of pixels of obstacles?
+o	How does the user win the game?
+o	What is the point of this game? 
+o	Is there scoring?
+o	How are points collected? Are there specific points for doing specific things?
+o	What are the rules?
+o	Is there a limit to the size of the obstacles? In pixels?
+o	Is there a limit to the number of obstacles?
+o	Can users customize appearance of the game?
+o	Difficulty levels 
+o	
 •	Breakdown and identify logical connection between components of the program:
-  o	Ball needs to detect and react to obstacles
-  o	Obstacles need to be detectable 
+o	Ball needs to detect and react to obstacles
+o	Obstacles need to be detectable 
 •	State assumptions:
-  o	Obstacles overlapping would be hard to code into the physics of the game
-  o	Since this is a game, there could be scoring 
+o	Obstacles overlapping would be hard to code into the physics of the game
+o	Since this is a game, there could be scoring 
 
 Requirements:
+•	Thoughts
+o	Create blocks then hit play and ball cannot hit the bottom or lose a life. 
+o	Can you trap the ball? Trapping the ball may result in points 
+o	Aiming 
+o	User limited on how many obstacles 
+o	Each round you get a certain amount of ink 
+o	Score is based on if you trapped a ball, can get it to go into a certain hole
+o	Influence the direction of the ball 
+o	Web page 
+o	
 •	Functional – mandatory 
-  o	Ball must have realistic bouncing functions off the side of the screen 
-  o	Program must display a ball that moves in response to user input and environment 
-  o	Users must be able to draw obstacles on the screen using the mouse 
-  o	Obstacles must be a minimum of 3 pixels in size to be detected as a collision 
-  o	The program must accurately detect collisions between the ball and the screen boundaries 
-  o	Obstacles msut not overlap 
-  o the ball must react realistically to multiple obstacles
-  o	Ball Animation 
-  o	Obstacle Creation 
-  o	Collison Detection 
-  o	Ball interaction physics 
+o	Ball must have realistic bouncing functions off the side of the screen 
+o	Program must display a ball that moves in response to user input 
+o	Program must display a ball that moves in response to environment 
+o	Users must be able to draw obstacles on the screen using the mouse 
+o	Obstacles must be a minimum of 3 pixels in size to be detected as a collision 
+o	Shapes 
+o	The program must accurately detect collisions between the ball and the screen boundaries 
+o	Ball must display appropriate physics  
+o	Obstacles must not overlap 
+o	the ball must react realistically to multiple obstacles 
+o	The program shall have a scoring system 
+o	The program shall display scoring on the screen in real time
+o	Ball Animation 
+o	Obstacle Creation 
+o	Collison Detection 
+o	Ball interaction physics 
 •	Non-functional 
-  o	Needs to have a nice user interface – make it easy to draw obstacles and understand the rules 
-  o	Collision detection needs to be efficient 
-  o	Smooth animation 
-  o	Error Handling for unexpected user actions 
+o	The program must have an intuitive user interface 
+o	The program shall have efficient collision detection  
+o	The program shall have smooth animation 
+o	The program shall have error handling for unexpected user actions 
 •	Optional 
-  o	Scoring system
-  o	Display scoring on the screen in real time
-  o	Game modes? Time challenges?
-  o	Sounds effects and music
-  o	Scoring system maybe based on number of obstacles overcome by the ball
+o	The program may have game modes
+o	The program may have time challenges
+o	The program may have sounds effects and music 
 •	Unhappy Paths 
-  o	Invalid obstacles drawing. If the user attempts to draw an obstacle smaller than three pixels, the program could prompt the user to draw again 
-  o	Overlapping obstacles – the program should detect this condition and provide feedback, suggesting that the obstacles not overlap 
-  o	Drawing obstacles outside the screen – do not let user draw obstacles outside the screen and alter user that this is an invalid move 
-  o	Insufficient hardware resources – alert user
-  o	
+o	Invalid obstacles drawing. If the user attempts to draw an obstacle smaller than three pixels, the program could prompt the user to draw again 
+o	Overlapping obstacles – the program should detect this condition and provide feedback, suggesting that the obstacles not overlap 
+o	Drawing obstacles outside the screen – do not let user draw obstacles outside the screen and alter user that this is an invalid move 
+o	Insufficient hardware resources – alert user
+
+
 Arcade Style Game:
 •	Identify the problem and its component parts: 
-  o	Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
+o	Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
 •	Additional required information:
-  o	How does the owner want the user to control input into the game? Keyboard? Joystick? 
-  o	Are the obstacles randomly generated as the game is being played or are there maps?
-  o	How do we know when the game is over? How many crashes/ collisions 
+o	How does the owner want the user to control input into the game? Keyboard? Joystick? 
+o	Are the obstacles randomly generated as the game is being played or are there maps?
+o	How do we know when the game is over? How many crashes/ collisions 
 •	Breakdown and identify logical connection between components of the program:
-  o	Car must respond to obstacle
-  o	Obstacle must be detectable 
-  o	
+o	Car must respond to obstacle
+o	Obstacle must be detectable 
 •	State assumptions:
-  o	May need to give different input scheme options for accessibility services 
-  o	Going to want to vary the obstacles 
-  o	Arcade style means there is a scoring system 
-  o	Arcade systems typically have difficulty levels 
+o	May need to give different input scheme options for accessibility services 
+o	Going to want to vary the obstacles 
+o	Arcade style means there is a scoring system 
+o	Arcade systems typically have difficulty levels 
 Requirements:
 •	Functional – mandatory 
-  o	Game must allow users to control the movement of the vehicle using some kind of input device  
-  o	generate obstacles on the road for the player to navigate around 
-  o	Ensure obstacles vary in size, shape and maybe speed if obstacles move
-  o	Implement a collision detection system to determine when the player’s vehicle collides with obstacles 
-  o	Game should have good physics and respond appropriately to crash 
-  o	Create a scoring mechanism. Maybe based on how many miles traveled without crash 
-  o	Display this score 
-  o	Game over screen 
-o	
+o	Game must allow users to control the movement of the vehicle using input device  
+o	The program must generate obstacles on the road for the player to navigate around 
+o	The program must ensure obstacles vary in size, shape and speed if obstacles move
+o	The program must implement a collision detection system to determine when the player’s vehicle collides with obstacles 
+o	The program shall have respond appropriately to crashes
+o	The program shall have a scoring mechanism. 
+o	The program shall display this score 
+o	The program shall have a game over screen 
 •	Non-functional 
-  o	Needs to have a nice user interface – make it easy to draw obstacles and understand the rules 
-  o	Collision detection needs to be efficient 
-  o	Smooth animation 
-  o	Error Handling for unexpected user actions 
-  o	Accessibility 
+o	The program shall have an intuitive user interface 
+o	Collision detection shall be efficient 
+o	The program shall have smooth animation 
+o	The program shall have error Handling for unexpected user actions 
+o	The program shall have accessibility features 
 •	Optional 
-  o	Provide options for the different control schemes 
-  o	Things like power ups 
-  o	Difficulty levels 
-  o	Environment variation 
-  o	Multiplayer mode
-  o	Vehicle upgrades 
+o	The program may provide options for the different control schemes 
+o	The program may have features like power ups 
+o	The program may have varying difficulty levels 
+o	The program may have environment variation 
+o	The program may have multiplayer mode
+o	The program may have vehicle upgrades 
 •	Mandatory
-  o	Player controls
-  o	Obstacle generation
-  o	Collison detection 
-  o	Scoring system 
-  o	Game over screen/ way to determine game over 
+o	Player controls
+o	Obstacle generation
+o	Collison detection 
+o	Scoring system 
+o	Game over screen/ way to determine game over 
 •	Unhappy Paths 
-  o	Invalid control input – if the user provides unrecognized input for controlling the vehicle, the program could respond by providing feedback to the user about the correct controls
-  o	Collison with an obstacle during the game – program should initiate a collision response like crash animation, sound effects, transition to game over screen 
-  o	If the user starts to button mash in a way that might not be registered by the machine – the program should implement a limit on control selection somehow 
+o	Invalid control input – if the user provides unrecognized input for controlling the vehicle, the program could respond by providing feedback to the user about the correct controls
+o	Collison with an obstacle during the game – program should initiate a collision response like crash animation, sound effects, transition to game over screen 
+o	If the user starts to button mash in a way that might not be registered by the machine – the program should implement a limit on control selection somehow 
+
