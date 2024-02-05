@@ -1,0 +1,55 @@
+Caden Lafollette 
+
+CSCI-4250-002 
+
+Requirements Exercise 
+
+ 
+
+1. Bouncing Ball Game 
+
+Program must generate balls at random intervals 
+
+Balls can be various colors 
+
+Balls can be various sizes 
+
+Balls can have a random initial speed 
+
+Balls can have a maximum speed 
+
+There can be at most 10 balls on the screen at once 
+
+Program must allow user mouse input to draw shapes of at least 3 pixels in size 
+
+Program must detect collision with sides of screen 
+
+Program must detect collision with user-drawn shapes 
+
+Ball must speed up after each collision until reaching the maximum set speed 
+
+Ball must explode once it reaches a max speed 
+
+Assumptions: Objects drawn by the user do not need to be completed for collision to be detected. This prevents a user drawing from being rendered while inside a ball. Also, if a user attempts to draw onto a ball directly, the drawing will simply be ignored. 
+
+ 
+
+2.Arcade Driving Game 
+
+Program must procedurally generate a driving route 
+
+Program must procedurally generate obstacles on the route 
+
+Program must allow user to change direction of the car 
+
+Program can allow for user to change speed of car 
+
+Program can allow for user customization of car 
+
+Program can keep track of distance driven by the user 
+
+Program must detect collision with an obstacle 
+
+Program must end a playthrough once a collision is detected. 
+
+Assumptions:  Assumptions: Program is already capable of handling driving physics, world-rendering physics, and other basic game engine capabilities. 
