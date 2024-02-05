@@ -1,0 +1,17 @@
+Bouncing Ball Simulation
+
+1. The program should display a ball that moves at a simulated velocity in a random initial direction on a computer monitor. (mandatory)
+
+2. The program should display the ball bouncing off the edges of the screen at the appropriate reflection angle. (mandatory)
+
+3. The program should accept input from the user through the mouse, allowing them to draw objects no less than 3 pixels in size. (mandatory)
+
+4. The program should display the ball bouncing off of obstacles created through user input. (mandatory)
+
+5. The program should simulate relatively appropriate physics for velocity and bouncing. (optional)
+
+6. The program should work on a variety of displays, aspect ratios, and resolutions. (optional, non-functional)
+
+7. If unexpected output occurs (mismatched screen resolution, error in physics simulation, etc), output to error log and exit gracefully. (optional, non-functional)
+
+8. Could be part of an educational physics simulator if additional functionality and better simulation is added (optional, nonfunctional).
