@@ -1,0 +1,16 @@
+Ball program functional:
+- Canvas where the user can draw and the ball can move freely
+- ball needs to bounce off of sides and of anything the user draws
+- defined physics so that the user knows what to draw to make the ball go a direction
+optional:
+- Scoring mechanic. Maybe the ball has to hit a certain area of the wall and the less amount of pixels you use gets you score
+- control of the ball based on user input
+- differing levels of speed
+- UI that shows score
+- save game feature
+Non-functional: 
+- The program should be optimized and run at high frames
+- the program should have accessibility features for the disabled
+-  erase all drawings smaller then 3 pixels 
+- work on a variety of OS
+- Some way of keeping track of bugs and errors.
