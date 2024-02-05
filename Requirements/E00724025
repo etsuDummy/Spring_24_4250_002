@@ -1,0 +1,16 @@
+Ball bouncing game
+- ball must bounce when interracting with wall (mandatory)
+- ball must bounce when interracting with obstacle (mandatory)
+- must have user mouse input (mandatory)
+- items for the ball to interact with (optional)
+- ball should change color on each touch (optional)
+- ball speed increases every bounce (optional)
+
+Driving game
+- Must have user keyboard input (mandatory)
+- Vehicle move forward without input (mandatory)
+- Game must end when car hits an obstacle (mandatory)
+- player has set amount of lives (optional)
+- player can grab upgrades when dodging obstacles (optional)
+- player can make it to a finish line (optional)
+- vehicle gets faster after every avoided obstacles (optional)
