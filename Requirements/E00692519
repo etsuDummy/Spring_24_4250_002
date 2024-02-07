@@ -4,36 +4,36 @@ Requirements Exercise
 02/05/2024
 
 
-The game MUST allow the player to control the movement of a vehicle using input devices.
+The game MUST allow the player to control the movement of a vehicle using input devices (FUNCTIONAL).
 
-The game MUST generate obstacles on the game screen for the player to navigate around.
+The game MUST generate obstacles on the game screen for the player to navigate around (FUNCTIONAL).
 
-The game MAY generate obstacles of different designs, EG size, shape, color.
+The game MAY generate obstacles of different designs, EG size, shape, and color (FUNCTIONAL).
 
-The player's vehicle MUST collide with obstacles if not successfully navigated, resulting in a crash scenario.
+The player's vehicle MUST collide with obstacles if not successfully navigated, resulting in a crash scenario (FUNCTIONAL).
 
-The game MUST provide a scoring system based on the player's ability to navigate and avoid obstacles.
+The game MUST provide a scoring system based on the player's ability to navigate and avoid obstacles (FUNCTIONAL).
 
-The game SHOULD display the player's score on the screen during and/or after gameplay.
+The game SHOULD display the player's score on the screen during and/or after gameplay (FUNCTIONAL).
 
-The player's vehicle movement speed SHOULD be adjustable based on the player's input.
+The player's vehicle movement speed SHOULD be adjustable based on the player's input (FUNCTIONAL).
 
-The game SHOULD provide audio feedback, such as engine sounds or collision alerts, to enhance the gaming experience.
+The game SHOULD provide audio feedback, such as engine sounds or collision alerts, to enhance the gaming experience (FUNCTIONAL).
 
-The player MUST have the option to restart the game after a collision or at the end of each round.
+The player MUST have the option to restart the game after a collision or at the end of each round (FUNCTIONAL).
 
-The game SHOULD run on different devices.
+The game SHOULD run on different devices (NON-FUNCTIONAL).
 
-The game SHOULD respond to player input with minimal lag.
+The game SHOULD respond to player input with minimal lag (NON-FUNCTIONAL).
 
-The game SHOULD be designed to allow future updates and upgrades.
+The game SHOULD be designed to allow future updates and upgrades (NON-FUNCTIONAL).
 
-The game MUST reliably handle collisions and obstacles without crashing or freezing.
+The game MUST reliably handle collisions and obstacles without crashing or freezing (NON-FUNCTIONAL).
 
-The game MUST be safe and secure from unauthorized access.
+The game MUST be safe and secure from unauthorized access (NON-FUNCTIONAL).
 
-The game MAY incorporate visual effects, such as animations on crashes. (optional).
+The game MAY incorporate visual effects, such as animations on crashes (FUNCTIONAL).
 
-The game MAY include customizable settings for difficulty levels, allowing players to adjust the challenge (optional).
+The game MAY include customizable settings for difficulty levels, allowing players to adjust the challenge (FUNCTIONAL).
 
-The solution MAY support multiplayer functionality, allowing players to compete or collaborate (optional).
+The solution MAY support multiplayer functionality, allowing players to compete or collaborate (FUNCTIONAL).
