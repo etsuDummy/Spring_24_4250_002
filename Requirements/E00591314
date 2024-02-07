@@ -1,0 +1,68 @@
+Phillip Edwards
+Requirements Exercise
+
+Scenario 1
+Try to write the requirements for a program that bounces a ball off the sides of the screen and any obstacles larger than 3 pixels the user draws with the mouse
+
+Requirements:
+•	There MUST be a ball that moves around the screen
+    o	Functional
+•	There MUST be a way for the user to draw
+    o	Functional
+•	The ball MUST bounce off the walls of the screen (all of the walls)
+    o	Non-functional, maybe also functional *depends on if all the walls is a restriction*
+•	The ball MUST bounce off user drawing’s bigger than 3 pixels
+    o	Non-functional
+•	It MIGHT need brushes for the user
+    o	Non-functional, Optional
+
+Information that is needed:
+•	Is this going to be on the PC screen or a game window that is the size of the screen?
+•	Is the user going to have to draw?
+•	Does there need to be a menu of any type?
+•	What does the user need to draw? Random shapes? Boxes? Circles?
+•	Does the ball have gravity?
+•	Does the ball need to have any sort of acceleration or other forces?
+•	Does it need to bounce from all the walls or just some of them?
+•	Is there a time requirement for this project? (Slide 13 of PowerPoint)
+
+Potential Issues:
+•	What happens when the user draws something inside the ball?
+•	What happens when the user draws on top of a previous drawing.
+•	What happens if the entire screen is covered in drawings?
+
+
+ 
+Scenario 2
+Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
+
+Requirements:
+•	There MUST be vehicle for the player to drive
+    o	Functional
+•	There MUST be controls to drive the vehicle
+    o	Functional
+•	There MUST be obstacles that the player must avoid
+    o	Non-Functional
+•	Hitting the obstacles MUST have a consequence
+    o	Non-Functional
+•	There MAY be a menu to start the game
+    o	Functional, Optional
+•	The obstacles MIGHT move
+    o	Functional, Optional
+
+Information that is needed:
+•	Is this going to be 2d or 3d? If 2d, vertical or horizontal?
+•	What is the consequence for hitting an obstacle?
+    o	Reduced health, game over, restart at checkpoint?
+•	How long is the game? Infinity? Laps?
+•	Should the obstacles move?
+•	Power-ups?
+•	What should be the controls? Should users define this?
+•	Who is the target audience? (slide 12 of the requirements PowerPoint)
+
+Potential Issues:
+•	What happens when the player moves to the edge the screen? What about past it?
+•	What happens when the player finishes? What about getting a game over?
+•	Is this multiplayer? If so, what happens when two players collide?
+
+
