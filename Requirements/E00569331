@@ -1,0 +1,37 @@
+The program as a story is a mini game that will be included inside another overarching game. The user will be met with a start screen and when the start button is hit the block laying section will begin 
+The user must build blocks that are not located in the center of the screen and within a certain size so it cannot ruin the gameplay. Once the alotted amount of block are placed a ball will spawn in the center then go in a random direction.
+The goal will be randomly set in the wall and the user must prevent the ball from entering the hole , it is a game of luck and skill. 
+The longer the ball is not in the goal the higher the score for the user.
+The user cannot block the goal with their blocks to prevent the ball from entering.
+
+The requirements in short form.
+There must be random goal.- m/f
+The obstacles must be user defined.m/f
+The ball must be able to move-m/f
+the ball must be able to bounce- m/f
+There must be a scoring system - m/f
+The ball must be able to move m/f
+There must be a limit to the size of the user blocks - m/nf
+The goals cannot be blocked - m
+The blocks can have different colors - o
+The ball can have different colors- o
+The program must be in the same language as the overaching game- m/f
+The start screen can have scores - o
+There must be a timer - m/f
+Blocks cannot be placed dead center- m
+the blocks cannot be touching-m
+there must be a limit to blocks allow for users - m
+
+The solution:
+A program that works in the same language.
+Follows rules as stated in the requirements.
+Test would be on integration, start, inputs, clocks, boundaries, and goals. 
+Integrations- if the game will start from the inside the original game.
+Start- Whetehr the game will load and lead to the start screen.
+Input- if the blocks can be placed anywhere thats allowed.
+Clock- The score system is working in the game.
+Boundaries- The ball collides with borders on both obstacles and walls.
+Goal- It will stop clock resulting in the prompt for restart.
+
+
+

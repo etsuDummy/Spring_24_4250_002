@@ -1,0 +1,16 @@
+Ball bouncing game
+- ball must bounce when interracting with wall (mandatory) (functional)
+- ball must bounce when interracting with obstacle (mandatory) (functional)
+- must have user mouse input (mandatory) (non-functional)
+- items for the ball to interact with (optional) (functional)
+- ball should change color on each touch (optional) (functional)
+- ball speed increases every bounce (optional) (non-functional)
+
+Driving game
+- Must have user keyboard input (mandatory) (non-functional)
+- Vehicle move forward without input (mandatory) (non-functional)
+- Game must end when car hits an obstacle (mandatory) (functional)
+- player has set amount of lives (optional) (non-functional)
+- player can grab upgrades when dodging obstacles (optional) (functional)
+- player can reach an end condition, finish line (optional) (functional)
+- vehicle gets faster after every avoided obstacles (optional) (non-functional)

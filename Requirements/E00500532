@@ -1,0 +1,7 @@
+Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
+- create user id for each user/player
+- display score from present and past player/user
+- create different levels of difficulties for each obstacles
+- create different type of obstacles for the players to navigate
+- be able to have multiple players play at the same time.
+- create a list of player that beats each obstacles the from the fastest to slowest
