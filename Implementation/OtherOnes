@@ -1,0 +1,40 @@
+MEMBERS: E00704085, E00659995, E00664531
+
+// Comment
+// Implementation Exercise 2 - Input ASCII Character Counting
+
+// Requirements
+// Take input of string literal OR filepath to ASCII-based file.
+  // When taking input, MUST have input validation.
+    // Is the string a string literal or a filepath?
+    // If a filepath, does the user have permissions to read the file?
+// Compute the total number of occurrences of each ASCII character count
+// 
+
+// SPECIAL CONSIDERATIONS
+// ALL file data formats can be "cast back" to binary, which can be cast to ASCII. This means that it is not possible to receive non-ASCII characters.
+// What happens if the file is found, but contains NULL (e.g. touch file)?
+  => Throw an exception, print to user that the file was found but contains no data.
+// What happens when two characters tie for a top-3 position?
+  => The tiebreaker is the ordering of the ASCII codes, i.e. the "lesser" ASCII code, as an integer code, will beat any that come later. (128-255)
+
+// Candidate Languages/Platforms
+// bash
+  //sed | grep | sort pipeline could separate input string into characters and report counts readily
+    // -> Need to extract top 3 BY COUNT
+    // -> Use of sed to separate characters introduces duplicate whitespace characters, not viable solution
+
+// C#
+  // SortedDictionary could be used to index each ASCII code (character) into the collection with a key value representing the current count.
+  // String.reverse() will reverse the input string data.
+
+Test Cases
+Blank file
+  Print(“This file is empty.”)
+File does not exist
+  Print(“String input: [file]. File not found.”)
+  If same filepath is input again, evaluate input as a string literal
+Permission denied
+  Print (“Permission denied for [file].”)
+There is a tie between more than 3 characters
+  Choose the first 3 based on sequential order of ASCII codes
