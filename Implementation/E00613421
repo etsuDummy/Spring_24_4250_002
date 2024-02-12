@@ -1,0 +1,35 @@
+// Using Recursion; take two numbers in from the user (a human) and add them together then separate the least significant digit and add it the remaining digits and so on until you have a single digit answer. 
+// EX: 87345 => 8734+5= 8739 => 873+9 = 882 => 88 + 2 = 90 => 9+0 = 9
+
+Console.Write("Enter the first number as a positive integer: ");
+int firstNum = Convert.ToInt32(Console.ReadLine());
+// use regex to ensure input value is a 32 bit, positive integer
+
+Console.Write("Enter the second number as a positive integer: ");
+int secondNum = Convert.ToInt32(Console.ReadLine());
+// use regex to ensure input value is a 32 bit, positive integer
+int sum = 0;
+
+try
+{
+    sum = firstNum + secondNum;
+}
+catch
+{
+    new Exception("Numbers did not add correctly or overflowed.");
+}
+
+while (sum >= 10) // loop until sum is a singular digit
+{
+    int lsdSum = 0;
+
+    while (sum > 0)
+    {
+        lsdSum += sum % 10; // find the least common digit of the sum in base 10
+        sum = sum / 10; // remove it from the sum total in base 10
+    }
+
+    sum = lsdSum; // set the sum equal to the sum of the least significant digits
+}
+
+Console.WriteLine(sum);
