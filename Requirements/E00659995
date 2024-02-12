@@ -1,0 +1,27 @@
+Try to write the requirements for a program that bounces a ball off the sides of the screen and any obstacles larger than 3 pixels the user draws with the mouse
+	Try to write the requirements for simple arcade style driving game where the player has to navigate around obstacles to keep from crashing.
+
+
+Ball Game
+The game must include input for the user to create obstacles
+The game must include a way to measure user-drawn obstacles
+The game must include clear boundaries for the sides of the screen
+The game must include a mechanic to begin the game/launch the ball
+The game might include different sizes/styles for the ball
+The game must include a clear start/end condition
+The game might include a timer
+The game might include a scoring system
+The game might include a scoreboard
+
+Driving Game
+The game must include obstacle generation
+The game must include boundaries for the vehicle
+The game must include a clear start/end condition
+The game might include a timer
+The game must include a way to identify a crash
+The game might include a scoring system
+The game might include a scoreboard
+The game might include different sizes/styles for the car
+The game might include different speeds for the car
+The game might include different difficulty options
+
