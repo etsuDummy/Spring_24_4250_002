@@ -1,0 +1,18 @@
+This program will be taking on the second scenario of taking in a string, whether its directly from a user or from a file, and computing the total amount of each character in the ASCII set. It should also print out the top 3 most occurred and also printing out how many characters in the set were not detected. Finally, the original string should be printed out in reverse order.
+
+Design Thoughts:
+No language seems particularly required, though I will mainly be using C# for any sort of pseudo code that's written. It should be stated though that I have not had a experience with this type of problem so far, so my knowledge is limited in certain areas. 
+
+Initially, the program needs to be able to take in a string from either a user or a file. For a happy path, the user inputs a string with the program reading and accepting it. Alternatively, a file is inputted and the program is able to read the file and accept that as well. In the case of a unhappy path, the user would input something that isn't a string (or a file containing a string), which at that point the program should have a condition (probably as an if/else statement) that warns the user that whatever they inputted is not valid for the program when such an event happens. With that in mind, the program should probably ask the user then if they will be directly inputting a string or if the program will be reading a file. 
+
+After the user inputs something, the bulk of the program will then begin. The program will read the string it was given and begin counting all the characters. This will most likely be used within a forloop that will loop for as many characters are contained within the string. In every loop, it should increment the number of times each character was used, and by the end it should contain the final results, with them being displayed by the top 3 that are the highest. Importantly, it should most likely display the ASCII decimal as certain characters wouldn't be easy to display normally. 
+
+A rough look on what it would look like (this will most likely be changed as ideas are formed):
+    userInput = string
+    userString = string;
+
+    Console.WriteLine("Enter "string" if you are inputting a file and "file" for the latter. ");
+
+    Console.WriteLine("Insert a string:");
+    userInput = Console.ReadLine();
+
