@@ -1,0 +1,47 @@
+Team Members: Travis Nagle, Philip Edwards
+2. 
+Take in a string (from a user or a file), compute the total number of occurrences of each character in the ASCII set. 
+Print out the top three characters (with the most occurrences). Print out how many characters in the ASCII set you didn’t detect. 
+Then print out the string in reverse order.
+
+Requirements:
+1. Input handling
+	-> Possible prompt for the user
+	-> Split into string input, then file input
+	-> Side note: file input requires opening/closing the file. Read privileges, valid filepath
+2. Compute the total num of occurences
+3. Print out the top 3 characters
+	-> Tracking the # of characters
+		-> Side note: what happens when there is less than 3 chars?
+	-> (subtract tracked from total)
+4. Reverse the string
+
+Design:
+0. Global Info
+	-> ASCII Character Set
+1. Read in some input from user
+	-> Straight into prompt/menu (choose file or string)
+	-> If File
+		-> File Path Handling (2)
+		-> Otherwise, read in string
+2. File Path Handing
+	-> Validate Path
+		-> Relative (handle on a case-by-case if time) -> Convert to absolute then follow absolute steps
+		-> Absolute (make sure file exists and can be read)
+	-> Open file
+	-> Read file in
+	-> Close file
+3. Print Output
+	-> (print to a file *option*)
+	-> Print out top 3 characters
+		-> Dictionary (key-value pair) for each ASCII symbol in set and it's occurance count *idea*
+		-> Find top 3 characters (arr of 3 that eject the lowest occuring one when a higher occurance character not currently in the array is detected. Inject that charcter into the array)
+	-> Print out reverse string
+		-> Reverse the string (there are methods)
+	-> Print each character that had an occurance > 0 for every character in ASCII Character set
+
+Detailed Design:
+	Functions: ord(), chr()
+	Data Structs: Dictionary, Array (or array adjacent structure)
+
+Implementation: (Began implementation, will finish later)
