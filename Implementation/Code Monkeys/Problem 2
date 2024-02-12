@@ -1,0 +1,41 @@
+Ethan Fraizer
+Genalyn Thomas
+
+Problem 2:
+Take in a string (from a user or a file), compute the total number of occurrences of each character in the ASCII set.
+Print out the top three characters (with the most occurrences). Print out how many characters in the ASCII set you didn’t detect. 
+Then print out the string in reverse order.
+
+Psuedo code:
+1. Ask user for a string either input or file
+2. Validate user input make sure its not an integer or a wrong file path
+      If user input is not a valid string go back and ask user for a valid string.
+      If use input is not a valid file go back and ask user for a valid file path.
+      If user input is valid then continue to step 3.
+Create dictionary for characters
+3. Validate each string character if it is in dicionary
+      If string character is in dictionary use it then  // coding in python - if it exist in dictionary the value automatically updates
+        increase by 1.
+      If characters is not in dictionary then add the character to dictionary then
+        increase by 1.
+Create counter for max to check if there are multiples of the same max value
+4. Find the 1st character max // use do while loop
+      int variable isMaxValue
+      delete  then // remove value from the string 
+      Add to string then repeat until the top 3 max value characters have been Printed
+5. Print only the 3 character with max value 
+6. Print HowMany Charcters ( 256 -( # of dictionary entries + total deleted)
+7. Print string reverse
+      Create a variable reverse it then print the string variable at the end.
+
+
+test date
+HAPPY PATH
+  a valid string of data w/ no issues at all
+SAD PATH
+  a string or file w/ one character
+  an invalid string (NULL)
+  an invalid file (file path dont exist/ no permission to access/ has no contents)
+  only one character 100 times
+  binary file
+  having more than 3 characters w/ the same max value of occurences
