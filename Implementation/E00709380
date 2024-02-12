@@ -1,0 +1,56 @@
+/*
+Using Recursion; take two numbers in from the user (a human) and add them together then separate the least significant digit and add it the remaining digits and so on until you have a single digit answer. 
+
+EX: 87345 => 8734 + 5 = 8739 => 873 + 9 = 882 => 88 + 2 = 90 => 9 + 0 = 9
+*/
+
+/*TEST CASE
+ *HAPPY PATH assuming the user enters a positive valid number for a int32
+ * max int value = 2,147,483,647
+ * min value = 0
+ * we should also test for numbers that are 1 digit
+ */
+
+using System;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        /// <summary>
+        /// main memory. NEED EXCEPTION HANDLING FOR USER INPUT(null, negative, letters)
+        /// </summary>
+        /// <param name="args"></param>
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your numbers: ");
+
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int index = num1+num2.ToString().Length;
+
+            Console.WriteLine(ReAddition(num1, num2, index));
+        }
+
+        /// <summary>
+        /// Should take in both numbers input by the user, if first iteration add them together, if not take off the least significant digit and add it to the number. 
+        /// </summary>
+        /// <param name="num1">First number input by the user</param>
+        /// <param name="num2">Second number input by the user</param>
+        /// <param name="index">index for keeping track of recuriosn. This will also be used to add the two numbers in the first iteration</param>
+        /// <returns></returns>
+        static int ReAddition(int num1, int num2, int index) 
+        {
+            if (index > 0)
+            {
+                num1 = num1 + num2;
+                index = num1.ToString().Length;
+                num2 = num1 >> index - 4;
+                index--;
+                ReAddition(num1, num2, index);
+                return num1;
+            }
+            else return num1;
+        }
+    }
+}
