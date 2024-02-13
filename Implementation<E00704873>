@@ -1,0 +1,24 @@
+Problem: Take in a string (from a user or a file), 
+compute the total number of occurrences of each character in the ASCII set. 
+Print out the top three characters (with the most occurrences). 
+Print out how many characters in the ASCII set you didn’t detect. 
+Then print out the string in reverse order.
+
+
+
+
+
+
+First step- take a string from user or a file
+Second step- count number of each char in ASCII
+Third step- Print/display top 3 characters (with most occurrences)
+Fourth step- Print/display char that didn’t detect.
+Fifth step- Print string in reverse order. 
+
+ASCII control char (0-31 and 127)
+ASCII printable characters (32-126)
+Extended ASCII characters (128-255).
+
+Equation: 
+There only certain amount of printable characters. (128)
+Count characters that you found- characters you detected. 
