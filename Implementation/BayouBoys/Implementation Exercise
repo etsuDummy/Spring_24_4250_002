@@ -1,0 +1,49 @@
+Software Engineering 1
+Brandon Riddle
+Timothy Grindstaff
+02/12/2024
+
+
+Requirements
+User input.
+Count each instance of the characters.
+Check if each character matches and ASCII character.
+Print out message of top 3.
+Print how many characters wasn’t detected.
+Print string in reverse order.
+
+DESIGN
+Take a string and split string into multiple characters. (User Input).
+Create VARIABLE1 and store each character in that array.
+Create VARIABLE2 and store each character in that array.
+In VARIABLE1 each instance of a character count. 
+(Count each instance of the characters)
+Sort characters in VARIABLE1 by their count “most to least”.
+Print top characters with the three greatest counts. (Print top three characters).
+Check each character and try to map it to an ASCII character. 
+(Check if each character matches and ASCII character.)
+If any, count each character that didn’t match. (Print how many characters didn’t detect)
+Reverse the each character in that array VARIABLE2. (Print string in reverse order)
+
+
+
+
+
+
+IMPLEMENTATION 
+// get string
+Input = ‘TestString’
+
+//store string into two arrays so we can reverse one and use the other to sort
+Variable1 = list(input)
+Variable2 = list(input)
+
+// creates empty dictionary to store character counts
+Char_count = {}
+
+//Iterate over each character in the array
+For char in Variable1:
+
+// Increment the count of the character in the dictionary
+Char_count[char] = char_count.get(char, 0) +1
+
