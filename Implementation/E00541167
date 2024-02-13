@@ -1,0 +1,46 @@
+Take in a string (from a user or a file), compute the total number of occurrences of each character in the ASCII set. Print out the top three characters (with the most occurrences). Print out how many characters in the ASCII set you didn’t detect. Then print out the string in reverse order.
+Kinser says there are no hidden requirements in this exercise. 
+
+1.	Requirements 
+a.	The program shall take in a string 
+b.	The program shall do user input validation
+  1.	Not empty 
+  2.	Valid characters
+3.	Valid moves – what would happen if they just hit enter?
+c.	The program shall have the ASCII set as an available resource to compare against 
+d.	The program shall be able to compare the string against the ASCII set
+e.	The program shall be able to take note of what characters appear from the string that are also in the ASCII set
+f.	The program shall be able to take note of how many occurrences appear in the string of each ASCII character 
+g.	The program shall be able to take note of what ASCII original set characters do not appear in the string
+h.	The program shall count how many ASCII original set characters do not appear in the string 
+i.	The program shall create a ranked set of present characters based on how many occurrences of each character 
+j.	The program shall be able to compare the number within the present set against the non present set of ASCII characters 
+k.	The program shall be able to generate string in reverse order 
+l.	The program shall print out top three characters with most occurrences. 
+i.	If there are more than 3 with the most occurrences then the program should output all of the top within the 3 highest numbers of occurrences. 
+m.	The program shall print out 
+n.	The program shall take in the entirety of the ASCII characters as valid characters. 
+o.	The program can have accessibility menus. 
+p.	The program can function efficiently in prompting for the string. 
+q.	The program can function efficiently in outputting 
+
+2.	Design – written in plain English
+a.	Store ASCII information to be compared against. 
+b.	Make string to store the user input. 
+c.	Make string to store reverse of string. 
+d.	Output prompt for user input 
+e.	Take in user input 
+f.	Input validation – validate that the user entered a valid string. The string cannot be an empty string. The string must have at least 1 character. The string must have within the allowable amount of characters for a string that will not crash the program. The program must do exception handling. 
+g.	The program will compare the string against the base ASCII character set. 
+h.	The program will store what characters are present within the string from the base set. 
+i.	The program will take note and store how many characters from the ASCII are not present in the string. 
+j.	The program will compare the present ASCII set against the string to see how many occurrences there are of each character. 
+k.	The program will store the number of occurrences of each character. This occurrence number will be linked to each character. 
+l.	The program will rank or reorganize each character in the storage – array or dictionary?? – based on how many occurrences there are. For example if “a” has 5 it, will come before “b” which has 3. 
+m.	The program will assess the top three ranked characters and if any two are equal than the program will assess the next two ranked for equality to any of the three or each, etc. 
+n.	The program will generate the string in reverse and store. 
+o.	The program will print to the screen how many ASCII characters were not present in the string.  
+p.	The program will print out the string in reverse. 
+3.	Test Cases
+a.	
+4.	
