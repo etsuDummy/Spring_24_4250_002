@@ -1,0 +1,161 @@
+Members
+Travis Nagle       E00724025
+Levi Shingleton    E00664531
+
+1. Identify all the verification activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle
+Verification focuses on making sure that the solution meets the specifications listed in design phase.
+  Requirements  - Requirements Analysis, Requirements Review
+  Design        - Design Review
+  Implementation- Unit testing, low-level testing; Code Review
+
+
+2. Identify all the validation activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle
+Validation focuses on the CUSTOMER-specific requirements, expectations, etc -> does the solution do what it is supposed to == HAPPY PATH.
+  Requirements  - SRS - customer approves requirements list
+  Design        - Ensuring that design doc(s) maps back to SRS objectives
+  Implementation- Solution should include features that customer requested in requirements.
+
+*!!! Traceability matrix always and forever !!!*
+
+
+Solution: a game where the player shoots a missile at ships passing across the screen (like the one I showed you using raptor).
+1. The solution must support missiles launched by the user
+  a. The solution must initiate a missile launch when the user clicks the right mouse button.
+    Precondition:  Game has started and player has control of pawn.
+    Action:        User clicks the right mouse button.
+    Postcondition: A single missile fires when the right mouse button is clicked while controlling the pawn.
+
+  b. The solution must initiate a missile launch when the user clicks the space bar.
+    Precondition:  Game has started and player has control of pawn.
+    Action:        User clicks the space bar.
+    Postcondition: A single missile fires when the space bar is clicked while controlling the pawn.
+
+  a/b NEGATIVE TEST
+    Precondition:  R-click and space bar inputs should result in a missile being fired.
+    Action:        The user should press any input button that is NOT r-click or space bar.
+    Postcondition: The user should NOT see any missiles being fired/appear.
+
+  c. The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+    Precondition:  Game has started, player has control, and has yet to fire any missiles; additionally, 
+    Action:        User rapidly enters any combination of right-clicks and space bars, exceeding 5 inputs.
+    Postcondition: No more than five (5) missiles should be present at any given time.
+
+  d. The solution must remove the missile from being active if it goes off the screen.
+    Precondition:  User has ability to fire missiles and a five (5) missile cap is enforced.
+    Action:        User should spam firing inputs (r-click and space bar)
+    Postcondition: Once five missiles are present and no more are being spawned, no more should spawn until one or more missiles exit the screen.
+    Maybe helpful visual: <|==>  - -         - - -     |||||     - - 
+                          player            missiles    screen edge
+
+  e. The solution must maintain the same constant speed for all missiles
+    Precondition:  User must have the ability to fire two missiles in quick succession.
+    Action:        User fires two missiles in quick succession. 
+    Postcondition: The user should observe that the missile fired later should never pass the first.
+                    Alternatively, user should observe that the distance between the fired missiles should not change over time.
+
+
+  f. The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+    Precondition:   The user has the ability to launch missiles.
+    Action:         The user should enter input to launch missiles.
+    Postcondition:  User should observe that - regardless of any other input or restrictions - the missiles will originate from the bottom of the screen.
+
+
+  g. The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+    Precondition:   Requirement 1f should be tested and verified.
+    Action:         The user should enter input to launch missiles.
+    Postcondition:  User should observe that when a missile is fired, it always travels in a straight line.
+
+
+  h. The solution must detect when a missile “hits” a ship
+    Precondition:  Ability to fire missiles, other ship actor(s) should be present on screen.
+    Action:        The user should launch a missile such that it will collide with a ship.
+    Postcondition: The user should observe that when the missile collides with the ship, an explosion sound effect should play.
+
+
+
+  i. The solution must display an explosion at the point where a missile “hits” a ship
+    Precondition:  Requirement 1h is tested and verified.
+    Action:        The user should launch a missile at a ship.
+    Postcondition: User should see an explosion effect when a missile collides with a ship.
+
+
+
+  j. The solution must remove the missile and ship after the missile “hits” the ship
+
+
+
+  k. The solution must keep a count of all “hits”
+
+
+
+
+The solution must support ships launched by the solution
+
+
+
+The solution must initiate a ship launch when the system detects there are no active ships.
+
+
+
+The solution must support multiple types of ships based on a configurable value.
+
+
+
+The solution must display the appropriate image based on the type of ship when the ship is active
+
+
+
+The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+
+
+
+The solution must randomly choose from available ship types when a launch is initiated, giving all types equal chance of being launched.
+
+
+
+The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+
+
+
+The solution must randomly choose a location to launch a ship from when initiated
+
+
+
+The system must randomly choose to launch the ship from the left side of the screen or the right side of the screen
+
+
+
+The system must randomly choose a row in the top two-thirds of the screen to launch the ship from
+
+
+
+The system must assign the speed of the ship based on the type of the ship being initiated
+
+
+
+The system must assign the direction of the ship based on which side of the screen it is being launched from (if from the left, direction goes left to right; if from the right, direction goes right to left)
+
+
+
+The solution must remove the ship from being active if it goes off the screen.
+
+
+
+The solution must end the game when the “hit” count has reached ten (10)
+
+
+
+The solution must end the game when the user clicks the left mouse button
+
+
+
+The solution must end the game when the user clicks the esc button
+  Precondition:
+  Action:
+  Postcondition:
+
+
+The solution must end the game if the user has not initiated a missile launch in the last 5 minutes
+  Precondition:   The game has been started and the user has yet to launch a missile.
+  Action:         User launches a missile and simultaneously starts a stopwatch.
+  Postcondition:  Once the stopwatch reaches 5 minutes, the game should end itself.
