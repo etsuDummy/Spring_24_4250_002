@@ -31,19 +31,74 @@ Reverse the each character in that array VARIABLE2. (Print string in reverse ord
 
 
 IMPLEMENTATION 
-// get string
-Input = ‘TestString’
+The following implementation results from using ChatGPT to generate generic Python code from our thought process during our requirements and design phases.
+    	
+# Take user input
+    input_string = input("Enter a string: ")
 
-//store string into two arrays so we can reverse one and use the other to sort
-Variable1 = list(input)
-Variable2 = list(input)
+   	 # Create VARIABLE1 and store each character in that array
+    variable1 = list(input_string)
+    
+    	# Create VARIABLE2 and store each character in that array
+    variable2 = list(input_string)
+    
+    	# In VARIABLE1 count each instance of a character
+    char_count = {}
+    for char in variable1:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    	# Sort characters in VARIABLE1 by their count “most to least”
+    sorted_chars = sorted(char_count.items(), key=lambda x: x[1], reverse=True)
+    
+    	# Print top characters with the three greatest counts
+    print("Top three characters with their counts:")
+    for char, count in sorted_chars[:3]:
+        print(f"Character: {char}, Count: {count}")
 
-// creates empty dictionary to store character counts
-Char_count = {}
+    	# Check each character and try to map it to an ASCII character
+    non_ascii_count = 0
+    for char in variable1:
+        if ord(char) > 127: # Check if character is non-ASCII
+            non_ascii_count += 1
+    
+    	# Print how many characters didn’t detect
+    print(f"Number of non-ASCII characters: {non_ascii_count}")
 
-//Iterate over each character in the array
-For char in Variable1:
+    	# Reverse position of each character in the array VARIABLE2
+    variable2.reverse()
+    
+    	# Print string in reverse order
+    print("String in reverse order:")
+    print(''.join(variable2))
 
-// Increment the count of the character in the dictionary
-Char_count[char] = char_count.get(char, 0) +1
 
+
+
+
+Working python code: chatgpt was used to get an idea of how it the logic would work. It was decided to keep this in to capture the separate iterations of the implementation process.
+
+from collections import Counter
+import numpy as n
+inp =  input('insert text:')
+
+# new is taking the characters in inp and splitting each letter making a list 
+new= [char for char in inp]
+print(new)
+
+#log takes the count each letter of the new list then loops though tell how many time it occurs
+log = Counter(new)
+dup = {element: count for element, count in log.items() if count >= 1}
+for element, count in dup.items():
+    print(f"'{element}' occurs {count} times.")
+
+# test takes the amount of unique characters and subtracts it from 256 the number of the ascii and extended ascii table
+test = (len(n.unique(list(inp))))
+print('There is ',256-test, 'ASCII characters missing')
+# this takes dup whcich is a dictionary to sort it then only displays the first three
+newdup = list(dup.items())
+sorted_dict = dict(sorted(dup.items(), key=lambda item: item[1],reverse=True)[:3])
+print(sorted_dict) 
+
+# another takes the input and makes the word output backwards
+another = (inp)[::-1]
+print(another)
