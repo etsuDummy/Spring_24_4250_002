@@ -1,0 +1,24 @@
+1.	Identify all the verification activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle
+-Show that a given work product conforms (testing)
+-Requirement Analysis (requirement 
+-Design Reviews & requirements traceability
+- Updating the traceability matrix, Code reviews and unit testing (implementation)z
+
+
+2.	Identify all the validation activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle
+
+-Show that product serves its purpose.
+- Precondition
+-Action
+-Postcondition
+
+1) The solution must support missiles launched by the user.
+-The Solution must initiate a missile launch when the user clicks the right mouse button or space bar. 
+- No more than 5 active missiles at a time. 
+A active missile is anyone that isn’t being used.
+-When the missile is fired, if it doesn’t hit its target you can add a miss title while the missile is taken off of the active screen. 
+-All missiles have same constant speed 
+-The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+
+
+
