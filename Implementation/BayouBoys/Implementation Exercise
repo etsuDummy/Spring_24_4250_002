@@ -32,44 +32,187 @@ Reverse the each character in that array VARIABLE2. (Print string in reverse ord
 
 IMPLEMENTATION 
 The following implementation results from using ChatGPT to generate generic Python code from our thought process during our requirements and design phases.
-    	
+
+
+
+
+
 # Take user input
     input_string = input("Enter a string: ")
 
+** Test Conditions **
+Precondition: The program runs and asks for user input
+Action: try multiple values in the input using different characters
+Postcondition: No errors are thrown when entering characters
+
+Precondition: The program runs and takes user input
+Action: try multiple values in the input using different characters
+Postcondition: Error is thrown when submitting a string
+
+
+
+
+
+
    	 # Create VARIABLE1 and store each character in that array
     variable1 = list(input_string)
-    
+
+** Test Conditions **
+Precondition: The program runs and takes user input
+Action: print out the variable onto the screen
+Postcondition: characters are shown in the printout of the array and in order
+
+Precondition: The program runs and takes user input
+Action: print out the variable onto the screen
+Postcondition: characters are not shown in the printout of the array
+
+Precondition: The program runs and takes user input
+Action: print out the variable onto the screen
+Postcondition: characters are  shown in the printout of the array but not in order
+
+
+
+
+
     	# Create VARIABLE2 and store each character in that array
     variable2 = list(input_string)
-    
+
+**Same test as Variable1**
+
+
+
+
+
+
+
+
     	# In VARIABLE1 count each instance of a character
     char_count = {}
     for char in variable1:
         char_count[char] = char_count.get(char, 0) + 1
+
+** Test Conditions **
+Precondition: Test 1 and 2 successful
+Action: print out the loop viewing the counts of the characters
+Postcondition: Characters are being counted correctly
+
+Precondition: Test 1 and 2 successful
+Action: print out the loop viewing the counts of the characters
+Postcondition: Characters are not being counted correctly 
+
+
+
+
+
+
+
     
     	# Sort characters in VARIABLE1 by their count “most to least”
     sorted_chars = sorted(char_count.items(), key=lambda x: x[1], reverse=True)
+
+
+** Test Conditions **
+Precondition: Test 1, 2, and 3 successful
+Action: print out the new variable and check if sorted
+Postcondition: Characters are sorted correctly based on count
+
+Precondition: Test 1,2, and 3 successful
+Action: print out the new variable and check if sorted
+Postcondition: Characters are incorrectly sorted based on count
+
+
+
+
+
+
+
     
     	# Print top characters with the three greatest counts
     print("Top three characters with their counts:")
     for char, count in sorted_chars[:3]:
         print(f"Character: {char}, Count: {count}")
 
+** Test Conditions **
+Precondition: Test 1, 2, 3, and 4 successful
+Action: Check this print method and see if it matches test 4's values
+Postcondition: Printout shows all characters with the top three values
+
+Precondition: Test 1, 2, 3, and 4 successful
+Action: Check this print method and see if it matches test 4's values
+Postcondition: Printout only shows top three characters
+
+Precondition: Test 1, 2, 3, and 4 successful
+Action: Check this print method and see if it matches test 4's values
+Postcondition: Printout shows wrong characters completely
+
+Precondition: Test 1, 2, 3, and 4 successful
+Action: Check this print method and see if it matches test 4's values
+Postcondition: Printout shows all characters
+
+
+
+
+
+
+
+
     	# Check each character and try to map it to an ASCII character
     non_ascii_count = 0
     for char in variable1:
         if ord(char) > 127: # Check if character is non-ASCII
             non_ascii_count += 1
+
     
     	# Print how many characters didn’t detect
     print(f"Number of non-ASCII characters: {non_ascii_count}")
 
+
+
+
+** Test Conditions **
+Precondition: Test 1, 2, 3, 4, and 5 were successful along with implementing an ASCII table to check between
+Action: Have a table showing ASCII characters and check the input to see if they do or don't match
+Postcondition: Printout shows the correct number of non-matching characters
+
+Precondition: Test 1, 2, 3, 4, and 5 were successful along with implementing an ASCII table to check between
+Action: Have a table showing ASCII characters and check the input to see if they do or don't match
+Postcondition: Printout does not show the correct number of non-matching characters
+
+
+
+
+
+
+
+
+
+
     	# Reverse position of each character in the array VARIABLE2
     variable2.reverse()
-    
+
     	# Print string in reverse order
     print("String in reverse order:")
     print(''.join(variable2))
+
+
+** Test Conditions **
+Precondition: Test 2 was successful
+Action: Check the printout and manually reverse the string by hand and see if it matches
+Postcondition: The array was correctly reversed
+
+Precondition: Test 2 was successful
+Action: Check the printout and manually reverse the string by hand and see if it matches
+Postcondition: The array was not correctly reversed
+
+
+
+
+
+
+
+
+
+
 
 
 
