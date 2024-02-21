@@ -12,6 +12,7 @@ EX: 87345 => 8734 + 5 = 8739 => 873 + 9 = 882 => 88 + 2 = 90 => 9 + 0 = 9
  */
 
 using System;
+using System.Numerics;
 
 namespace ConsoleApp3
 {
@@ -23,34 +24,60 @@ namespace ConsoleApp3
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+
+            int num1 = 0;
+            int num2 = 0;
             Console.WriteLine("Enter your numbers: ");
 
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            int num2 = Convert.ToInt32(Console.ReadLine());
-            int index = num1+num2.ToString().Length;
+            while (true)
+            {
+                try
+                {
+                    num1 = Convert.ToInt32(Console.ReadLine());
+                    num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(ReAddition(num1, num2, index));
+                    if (num1 < 0 || num2 < 0)
+                    {
+                        Console.WriteLine("Enter a positive number");
+                        continue;
+                    }
+
+                    break;
+                }
+
+                //exception handling for letters and numbers too big
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid input.");
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Number is too big or too small. Please enter a number that fits in 32 bit signed integer.");
+                }
+                
+            }
+            Console.WriteLine(ReAddition(num1, num2));
         }
 
         /// <summary>
-        /// Should take in both numbers input by the user, if first iteration add them together, if not take off the least significant digit and add it to the number. 
+        /// Should take in both numbers input by the user, if first iteration add them together, if not take off the least significant digit and add it to the number. first checks if the number is more then 1 digit. then sets num2 = (num1+num2) % 10 which gives rightmost digit. Then sets num 1 = (num1+num2) /10 which will return the rest of the number.
         /// </summary>
         /// <param name="num1">First number input by the user</param>
         /// <param name="num2">Second number input by the user</param>
-        /// <param name="index">index for keeping track of recuriosn. This will also be used to add the two numbers in the first iteration</param>
         /// <returns></returns>
-        static int ReAddition(int num1, int num2, int index) 
+        static int ReAddition(int num1, int num2) 
         {
-            if (index > 0)
+            num1 = num1 + num2;
+            if (num1 < 10)
             {
-                num1 = num1 + num2;
-                index = num1.ToString().Length;
-                num2 = num1 >> index - 4;
-                index--;
-                ReAddition(num1, num2, index);
-                return num1;
+               return num1;
             }
-            else return num1;
+            else
+            {
+                num2 = num1 % 10;
+                num1 = num1 / 10;
+            }
+            return ReAddition(num1, num2);
         }
     }
 }

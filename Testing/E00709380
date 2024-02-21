@@ -1,0 +1,71 @@
+
+
+1. Verification
+Requirements - requirements analysis. 
+Design - Design review, traceability matrix, 
+Implementation - code inspections/reviews, reviewing traceability matrix.
+2. Validation
+Requirements - Requirements for validation will be similar for verification. The requirements analysis will be generated. A good way to make sure there is understanding on the requirements would be to repeat back what you believe their requirement is asking for. 
+Design - When coming up with requirements keep in mind conformance testing. Make sure the software is up to date with the company's policies and standards. 
+Implementation - For implementation you should make sure the tests running for the customer map onto the requirements. That way customers don't request new features as missing requirements. 
+
+
+1)   The solution must support missiles launched by the user
+
+a)  The solution must initiate a missile launch when the user clicks the right mouse button.
+<ship is on screen and ready to fire><right click><missile appears on screen and launched from users ship>
+b)  The solution must initiate a missile launch when the user clicks the space bar.
+<ship is on screen and ready to fire><hit spacebar><missile appears on screen and launched from the users ship>
+c)  The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+**Here I would test if the missile had to be completely off screen to fire the next missile or just partially cut off pixels. I would test using both the space bar and right clicking.** 
+
+d) The solution must remove the missile from being active if it goes off the screen.
+<ship is on screen and ready to fire><fire five missiles. 1 and then 4 more some delayed time later. keeping hitting space bar and see when the missile fires and when the first missile leaves the screen><spacebar works as soon as the missile no longer appears on screen>
+e)  The solution must maintain the same constant speed for all missiles
+**for this I would test how the missiles react when the ship is moving, if they are slower when there are other missiles on screen. You could code a quick test that made the ship launch another missile directly beside the first one and compare when they get to the edge.** 
+
+f)    The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+**For this I would test both the position of the ship and how many other missiles are on screen at the time. I would try firing directly behind or right after another missile.** 
+g)  The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+**For this I would fire them in rapid succession and i would also try delayed missiles. Can missiles collide if fired in quick succession? Does firing the missile while moving cause spin?**
+h) The solution must detect when a missile “hits” a ship
+<Ship is on screen ready to fire and there are ships passing by><right click to fire a missile at a passing ship><The missile disappears when it hits ship and so does the ship.>
+i)    The solution must display an explosion at the point where a missile “hits” a ship
+<ship was hit><missile disappears and so does the missile><Play explosion animation>
+j)    The solution must remove the missile and ship after the missile “hits” the ship
+
+k)  The solution must keep a count of all “hits”
+
+2)  The solution must support ships launched by the solution
+
+a)  The solution must initiate a ship launch when the system detects there are no active ships.
+
+b)  The solution must support multiple types of ships based on a configurable value.
+
+c)  The solution must display the appropriate image based on the type of ship when the ship is active
+
+d) The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+
+                                        i)         The solution must randomly choose from available ship types when a launch is initiated, giving all types equal chance of being launched.
+
+                                     ii)         The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+
+                                   iii)         The solution must randomly choose a location to launch a ship from when initiated
+
+(1) The system must randomly choose to launch the ship from the left side of the screen or the right side of the screen
+
+(2)                  The system must randomly choose a row in the top two-thirds of the screen to launch the ship from
+
+(3)                  The system must assign the speed of the ship based on the type of the ship being initiated
+
+(4)                  The system must assign the direction of the ship based on which side of the screen it is being launched from (if from the left, direction goes left to right; if from the right, direction goes right to left)
+
+e)  The solution must remove the ship from being active if it goes off the screen.
+
+3)   The solution must end the game when the “hit” count has reached ten (10)
+
+4)  The solution must end the game when the user clicks the left mouse button
+
+5)   The solution must end the game when the user clicks the esc button
+
+6)  The solution must end the game if the user has not initiated a missile launch in the last 5 minutes.
