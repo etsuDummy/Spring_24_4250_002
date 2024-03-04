@@ -1,0 +1,102 @@
+
+In class exercise for Source Control 
+This exercise will help demonstrate how source control works.
+Trevor Taylor, SE I Fall 2022, “source control is the component that bridges our solutions derived from the problem-solving step to a final and deployable solution.“
+
+Does anyone know what a .gitignore file does ? If so, would you like to come up and briefly explain it to the class? If not, does anyone want to research it and bring that information to class next session?
+
+Video
+https://youtube.com/watch?v=j7YDbrS9I48 
+
+Gabriel Vieiros Ramos of SEII Fall 03 provided this link: (branching starts at 8:13) https://www.youtube.com/watch?v=Uszj_k0DGsg
+
+Create a new repository in Github called “Learning”. 
+We will be using the web based version, not the desktop version or the command line version.
+For advanced developers: we  are using Github web based version, not Git directly
+This will automatically create a “main” branch as your default.
+Create a new document in the “main” branch and add the following text: (Blank lines after each line, all 4 lines)
+    This is the first sentence.
+    
+    Second
+    
+    Third
+    
+    Fourth
+
+commit it (with comments: not “.”)
+========================================
+Now create a feature branch (“TWO”) off of “main” and select that branch to work in. Edit the file from branch “TWO” by replacing “Second” with “This is the second sentence.” and check it back in (commit).
+========================================
+Switch to the “main” branch if not already there.
+Edit the document from the first branch (“main”). Add “ with edits” at the end of the first sentence. Check it back in.
+Take note of the contents of the file.
+========================================
+Switch your active branch to “TWO”.
+See any differences in the file? 
+Now create a new feature branch (“THREE”) off the 2nd branch (“TWO”), make sure “TWO ” is your active branch when you create “THREE”.
+Edit the file by replacing “third” with “This is the third sentence.” and check it back in. 
+Take note of the contents of the file.
+Switch your active branch to “TWO”, edit the file by adding “, with edits” to the end of the second sentence and check it back in.
+========================================
+
+Set your branch to “main”
+Take note of the contents of the file.
+Create a new feature branch off “main” (call it “FOUR”). Add your 4th piece like before and check it in. (make sure you are using the “FOUR” and not “main”).
+Set the branch to “THREE”. Does it contain the 4th piece? Explain
+Now edit the 3rd piece “with edits” and check it back in.
+Switch to “FOUR”. Check out the file from the 4th feature branch. Does it contain your edits to the 3rd piece? Explain.
+Switch to “TWO”. Take note of the contents of the file.
+========================================
+Create a diagram to show the various branches and pieces
+How do you get the changes to the 3rd piece in “THREE” into the “TWO” branch? Okay, make it so.
+Any merge conflicts? If so, why did that happen? What could you do to avoid this?
+========================================
+Once your merge is complete you can delete the “THREE” branch
+Goto the “main” branch. What do you see?
+Switch to “FOUR”. What do you see?
+Switch to “TWO”. What do you see?
+Update your diagram by redrawing it.
+========================================
+Now merge “TWO” into “main” and delete “TWO”
+What’s in “main”? Can you tell without looking? 
+What’s in “FOUR”?
+Merge “FOUR” into “main” and delete “FOUR”
+What does your doc look like now?
+Why did we delete the branches after merging them?
+Check out the history on “main”
+========================================
+Describe what is happening in the following diagram where the red arrows are:
+
+When do you know you can merge your feature branch back into your target branch?
+Under what conditions can you change code that is in production?
+What does it mean to have a code freeze on a branch?
+
+In GitHub, click Insights and then Network
+
+Now, create a file (click “add a file”, click “create a new file”). Title for the file should be 
+BIOS/<firstname_lastname>_BIO
+{The “BIOS/” portion creates a folder for the file. GitHub browser does NOT allow you to create empty folders.}
+add your list of skills that you feel will be helpful to a team when we do the project later in the semester (remember the exercise from problem solving where we identified the skills and technologies needed for the project). Save the file to your local repo.
+You can push the file up by clicking on Contribute like before.
+After everyone has done this (and I’ve processed all the pull requests), refresh your repository and click “Sync Fork” 
+Now everyone should have everyone else’s files
+This will help you when you form teams for the project ========================================
+========================================
+========================================
+Optional homework (STRONGLY recommended)
+Create a new file in “main” like you did before. 
+ONLY type in “This is sentence one” to the new file.
+Do the same exercise again
+What differences in processes and results did you notice
+========================================
+Create a new file in “main” and populate.
+ONLY type in “This is sentence one” to the original file.
+Do the first exercise again (BUT NO secondary edits) in this new file 
+========================================
+Create a new file in “main” and populate it with an outline (like the original exercise) where there is a prompt for each of the four edits.
+Do the first exercise again (with secondary edits) in this new file EXCEPT this time, after all the branches and edits are done, merge TWO into main (watch what happens to THREE when you delete TWO), then THREE into main and then FOUR into main. 
+What was different in the process/results ? 
+========================================
+Create a new file in “main” and repeat the first exercise except this time, don’t merge any of the branches back into “main”. 
+Instead, pretend like the “FOUR” branch is a patch to the production code base in “main” and pull it into the branches “TWO” and “THREE”.
+For tomorrow’s exercise, we will “fork” a common repository. To learn more about this, search GitHub website or there several books on GitHub in the OReilly site.
