@@ -1,0 +1,104 @@
+Ethan Frazier
+Genalyn Thomas
+
+ 
+
+1. Identify all the verification activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle 
+
+Functional Testing – ex. Check login functionality and search functionality for a website. 
+
+Integration Testing – ex. Testing API communication between backend and frontend. Test integrated functionality works with the system. 
+
+System Testing – 
+
+Conformance Testing – ex. Tests the product against a set of standards 
+
+Configuration Testing – ex. Test compatibility with two different web browsers. Test compatibility with different languages and regional settings. 
+
+Performance Testing – ex. See how it performs well with simultaneous users. See how many transactions per second before it slows down. 
+
+Stress Testing – ex. Remove or lower resources and test how it preforms such as forcibly  
+
+Load Testing – ex. See how the program handles a fork bomb. Test if the server will handle a million requests at once. 
+
+User-Interface / Usability Testing – ex. Check if the input button or textbox functions correctly for the user. 
+
+Regression Testing – ex. After installation, software updates and checks if it still runs correctly. See if the user can sign back in after the changes have been made. 
+
+Installation Testing – ex. Test installation on two devices. Testing for physical installation vs digital installation. 
+
+Robustness Testing – ex. Testing incorrect and correct input when logging in. Test to see if customers can do a SQL injection. 
+
+2. Identify all the validation activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle 
+
+The precondition of the statement defines the state of the system prior to the test.  
+
+The action is the part of the test which is being validated. It should be specific enough that any developer or test could execute it without having to do lots of research.  
+
+The postcondition is the expected outcome of the action. It should be definitive and measurable. 
+
+ 
+
+Requirements: 
+
+1.
+  A.
+    Pre-condition 
+
+	  - Game is already created. 
+
+	  Action 
+
+      Test what happens when the user hits the left mouse button. 
+      
+      Test what happens when the user hits any button that is not the right button. 
+      
+      Test what happens when the user hits two button (one being the correct button) at the same time 
+      
+      Test what happens when the user hits the right mouse button. 
+
+	Post-condition 
+
+It will not do anything.  
+
+It will not do anything. 
+
+It will not do anything. 
+
+It will initiate a missile launch 
+
+ 
+
+Pre-condition 
+
+	Action 
+
+Test what happens when the user hits any button that is not the right button. 
+
+Test what happens when the user hits two button (one being the correct button) at the same time 
+
+Test what happens when the user hits the space bar. 
+
+Post-condition 
+
+     C. 
+
+Allow users to shoot more than five missiles. 
+
+Test to see if you can shoot your own missile/ blow up your own. 
+
+      D. 
+
+Allow the missile to go off screen and check if the missile counter decremented. 
+
+Check if the missile has been destroyed even if the counter doesn’t reflect. 
+
+      E. 
+
+Create a separate speed tracker for each missile to see if there are any variations in speed. 
+
+Create a speed limit and if it goes above the speed slow it down. 
+
+ 
+
+ 

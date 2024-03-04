@@ -1,0 +1,154 @@
+Noah Fraser E00659995
+Caden Lafollette E00704085
+
+
+Identify all the verification activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle
+
+	Requirements: Requirements analysis is a form of verification as it verifies the completeness and correctness of the customer’s requirements.
+	Design: Design review and traceability matrices are examples of verification activities during the design phase as they verify the design process and the completeness of requirements.
+	Implementation: Verification happens during the implementation phase through code reviews and unit testing which verifies the completeness and correctness of the code and its applications.
+
+
+Identify all the validation activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle
+
+	Requirements: Confirming requirements with the stakeholders to make sure both parties are in agreement.
+	Design: Confirming the design with the stakeholders to make sure the formulated design is accurate to the stakeholders’ product request and requirements.
+	Implementation: Confirming the finished product with the stakeholders to make sure that the product is what they requested.
+Utilizing a traceability matrix would validate that all of these phases are complete and correct based on the requirements. 
+
+
+Solution: a game where the player shoots a missile at ships passing across the screen (like the one I showed you using raptor).
+1)   The solution must support missiles launched by the user
+a)   The solution must initiate a missile launch when the user clicks the right mouse button.
+Test Case: I.
+Precondition: The game is running.
+Action: Tester right clicks.
+Postcondition: A missile is launched.
+
+Test Case: I-A. Combine A and B.
+Precondition: The game is running.
+Action: Tester enters a series of keystrokes other than right click or space bar.
+Postcondition: There are no missiles launched.
+
+
+b)  The solution must initiate a missile launch when the user clicks the space bar.
+Test Case: II.
+Precondition: The game is running.
+Action: Tester clicks the space bar.
+Postcondition: A missile is launched.
+
+		Test Case: I-A.
+c)    The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+Test Case: III.
+Precondition: There are <=5 active missiles.
+Action: Tester launches another missile.
+Postcondition: There are <=5 active missiles.
+
+
+d)  The solution must remove the missile from being active if it goes off the screen.
+Test Case: IV.
+Precondition: There are no active missiles.
+Action: Tester launches a missile and waits for it to exit the screen.
+Postcondition: There are no active missiles.
+
+
+e)   The solution must maintain the same constant speed for all missiles
+Test Case: V.
+Precondition: Test Case IV. 
+Action: Tester launches five missiles in two second increments.
+Postcondition: The missiles exit the screen in two second increments.
+
+
+f)     The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+Test Case: VI. Combine F and G.
+Precondition: There are no active missiles.
+Action: Tester rapidly fires several missiles.
+Postcondition: All missiles launch from the center of the screen and stay in the center of the screen as it moves vertically until exiting.
+
+
+g)   The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+		Test Case: VI.
+h)  The solution must detect when a missile “hits” a ship
+Test Case: VII. Combine H, I, and J.
+Precondition: There is a ship in the center of the screen.
+Action: Tester launches a missile.
+Postcondition: A hit is detected by the collision. The hit produces an explosion and both the missile and ship are removed from the screen.
+
+
+i)      The solution must display an explosion at the point where a missile “hits” a ship
+Test Case: VII.
+j)      The solution must remove the missile and ship after the missile “hits” the ship
+Test Case: VII.
+k)   The solution must keep a count of all “hits”
+Test Case: VIII.
+Precondition: The game is running and there are no registered hits.
+Action: Tester gets >1 hits.
+Postcondition: The hit count is the exact number of hits detected.
+
+
+2)   The solution must support ships launched by the solution
+a)   The solution must initiate a ship launch when the system detects there are no active ships.
+Test Case: IX.
+Precondition: There are no active ships.
+Action: System launches a ship.
+Postcondition: There is an active ship.
+
+
+b)  The solution must support multiple types of ships based on a configurable value.
+Test Case: X.
+Precondition: There 1 ship type. 
+Action: The value is changed >1 ship type.
+Postcondition: There are >1 ship types.
+
+
+c)    The solution must display the appropriate image based on the type of ship when the ship is active
+Test Case: XI.
+Precondition: There are multiple ship types with different images.
+Action: For each ship type: launch only that ship.
+Postcondition: Only the proper image is displayed for that ship type.
+
+
+d)  The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+Test Case: XII.
+Precondition: 
+Action: 
+Postcondition: 
+
+
+                                                      i)            The solution must randomly choose from available ship types when a launch is initiated, giving all types equal chance of being launched.
+                                                   ii)            The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+                                                iii)            The solution must randomly choose a location to launch a ship from when initiated
+(1)                       The system must randomly choose to launch the ship from the left side of the screen or the right side of the screen
+(2)                       The system must randomly choose a row in the top two-thirds of the screen to launch the ship from
+(3)                       The system must assign the speed of the ship based on the type of the ship being initiated
+(4)                       The system must assign the direction of the ship based on which side of the screen it is being launched from (if from the left, direction goes left to right; if from the right, direction goes right to left)
+e)   The solution must remove the ship from being active if it goes off the screen.
+Test Case: XIII.
+Precondition: Test Case: (d)
+Action: Wait for a ship to be launched.
+Postcondition: Ship is removed when it exits the screen.
+
+
+3)   The solution must end the game when the “hit” count has reached ten (10)
+Test Case: XIV.
+Precondition: The game is running and the hit count is 0.
+Action: Tester hits 10 ships.
+Postcondition: The game ends.
+
+
+4)   The solution must end the game when the user clicks the left mouse button
+Test Case: XV. Combine 4 and 5.
+Precondition: The game is running.
+Action: Tester clicks left mouse button or esc.
+Postcondition: The game ends.
+
+
+5)   The solution must end the game when the user clicks the esc button
+Test Case: (XV)
+6)   The solution must end the game if the user has not initiated a missile launch in the last 5 minutes.
+Test Case: XVI.
+Precondition: The game is running.
+Action: Tester does not launch a missile for 5 minutes.
+Postcondition: The game ends.
+
+

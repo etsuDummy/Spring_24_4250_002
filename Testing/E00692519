@@ -1,0 +1,102 @@
+Testing Exercise
+Brandon Riddle
+02/14/2024
+
+
+Verification Activities
+Requirements: Requirements analysis
+Design: Design Reviews and Requirements Traceability Matrix
+Implementation: Code Reviews and Unit Testing
+
+
+Validation Activities
+Requirements
+Precondition: All parties needed for requirements gather meet.
+Action: Gather information and check with customers to ensure correct requirements
+Postcondition: Customer APPROVES that all requirements have been logged and met. 
+
+Precondition: All parties needed for requirements gather meet.
+Action: Gather information and check with customers to ensure correct requirements
+Postcondition: Customer DISAPPROVES that all requirements have been logged and met. 
+
+
+Design
+Precondition: Gathered requirements.
+Action: Perform Requirements Traceability Matrix against the design.
+Postcondition: Traceability shows design MEETS requirements.
+
+Precondition: Gathered requirements.
+Action: Perform Requirements Traceability Matrix against the design.
+Postcondition: Traceability shows design DOES NOT MEET requirements.
+
+
+Implementation
+Precondition: Design has been created and it meets the requirements traceability matrix.
+Action: Code design.
+Postcondition: Solution WORKS but DOES NOT MEET requirements traceability matrix .
+
+Precondition: Design has been created and it meets the requirements traceability matrix.
+Action: Code design.
+Postcondition: Solution DOES NOT WORK and DOES NOT MEET requirements traceability matrix .
+
+Precondition: Design has been created and it meets the requirements traceability matrix.
+Action: Code design.
+Postcondition: Solution DOES NOT WORK but MEETS requirements traceability matrix .
+
+Precondition: Design has been created and it meets the requirements traceability matrix.
+Action: Code design.
+Postcondition: Solution WORKS and MEETS requirements traceability matrix .
+
+
+
+
+Raptor Game Testing
+Problem A 
+Precondition: Game is working and allows input.
+Action: Right click mouse.
+Postcondition: Missile launches.
+
+Precondition: Game is working and allows input.
+Action: Right click mouse.
+Postcondition: Missile does not launch.
+Problem B
+Precondition: Game is working and allows input.
+Action: Click ‘Space Bar’ on the keyboard.
+Postcondition: Missile does launch.
+
+Precondition: Game is working and allows input.
+Action: Click ‘Space Bar’ on the keyboard.
+Postcondition: Missile does not launch.
+Problem C
+Precondition: Game is working, allows user input, and missile fire button is correct.
+Action: Attempt to fire 6+ missiles at a time.
+Postcondition: Only 5 missiles shot.
+
+Precondition: Game is working, allows user input, and missile fire button is correct.
+Action: Attempt to fire 6+ missiles at a time.
+Postcondition: 6+ missiles shot.
+
+
+
+Problem D
+Precondition: Game is working, allows user input, and missile fire button is correct, and limit 5 active missile works.
+Action: Right click mouse or space bar 5 times, after the first one leaves the screen right click mouse or hit space bar again.
+Postcondition: Allows another missile to be fired.
+
+Precondition: Game is working, allows user input, and missile fire button is correct, and limit 5 active missile works.
+Action: Right click mouse or space bar 5 times, after the first one leaves the screen right click mouse or hit space bar again.
+Postcondition: Does not allow another missile to be fired.
+
+
+
+Problem E
+Precondition: Game is working, allows user input, problems A,B,C,D working
+Action: Fire multiple rockets in quick succession and watch distance between rockets.
+Postcondition: Rockets stay same distance apart.
+
+Precondition: Game is working, allows user input, problems A,B,C,D working
+Action: Fire multiple rockets in quick succession and watch distance between rockets.
+Postcondition: Rockets move away or get closer to each other.
+
+
+

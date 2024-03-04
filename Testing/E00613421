@@ -1,0 +1,77 @@
+1. Identify all the
+verification activities that occur in the Requirements, Design and
+Implementation phases of the SE Lifecycle.
+ 
+Requirements Phase – requirements analysis is the verification activity.
+ 
+Design Phase - a design review is the verification activity. 
+ 
+Implementation Phase - code inspections/review, unit testing, and updating the traceability matrix. (sourced from Testing powerpoint)
+ 
+2. Identify all the validation activities that occur in the Requirements, Design and Implementation phases of the SE Lifecycle.
+ 
+Requirements Phase – requirements validation with clients is the validation activity of the requirements phase.
+ 
+Design Phase – design assessment is the validation activity of the design phase.
+ 
+Implementation Phase – Acceptance testing and test cases is the validation activity of the implementation phase.
+ 
+3. Given requirements for a game where the player shoots a missile at ships passing across the screen, identify the test cases you would expect to run in the test phase.
+1. The solution must support missiles launched by the user.
+a. The solution must initiate a missile launch when the user clicks the right mouse button.
+ 
+Using the basic validation test case <Precondition> <Action> <Postcondition>:
+Precondition: Game is running, player is active
+Action: Player right clicks mouse.
+Postcondition: Missile is launched from player’s on-screen location in the direction of the mouse cursor.
+[GUARD] – Player holds down mouse button -> only one missile is fired
+ b. The solution must initiate a missile launch when the user clicks the space bar.
+ 
+Precondition: Game is running, player is active
+Action: Player right presses the space bar.
+Postcondition: Missile is launched from player’s on-screen location in the direction of the mouse cursor.
+[GUARD] – Player holds down spacebar -> only one missile is fired.
+[GUARD] – No other keypresses or inputs fire missiles.
+ 
+ 
+ 
+c. The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+ 
+Precondition: Five missiles are currently on screen.
+Action: Player launches another missile by pressing spacebar or right clicking.
+Postcondition: No missile is fired. Player is prompted that max active missiles have been reached.
+ 
+d. The solution must remove the missile from being active if it goes off the screen.
+ 
+Precondition: Missile approaches the edge of the screen.
+Action: Missile goes beyond screen edge based on aspect ratio and resolution.
+Postcondition: Missile is despawned and current missile count is decremented.
+ 
+e. The solution must maintain the same constant speed for all missiles.
+ 
+Precondition: Several missiles are fired at once. 
+Action: All missiles are tracked and limited to the same, constant speed.
+Postcondition: Missiles maintain constant speed.
+ 
+f. The solution must launch missiles from the center of the bottom of the screen when a launch is initiated.
+ 
+Precondition: Game is running, player is active.
+Action: Player launches a missile.
+Postcondition: Missile fires from the center of the bottom of the screen.
+ 
+g. The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+ 
+Precondition: Game is running, player is active.
+Action: Player launches one or several missiles.
+Postcondition: Missiles go vertically, straight up from the launch position.
+h, i, j. The solution must detect when a missile “hits” a ship and display an explosion, removing the missile and ship upon hit.
+ 
+Precondition: Game is running, player is active, enemy ship is present.
+Action: Player launches one or several missiles that hit an enemy ship.
+Postcondition: Enemy ship is destroyed upon impact and plays an explosion animation, removing both the enemy ship and the missile.
+ 
+k. The solution must keep a count of all “hits”.
+ 
+Precondition: Game is running, player is active, enemy ship is present
+Action: Player hits at least one enemy ship.
+Postcondition: Prompt is displayed showing the total number of hit ships. 
